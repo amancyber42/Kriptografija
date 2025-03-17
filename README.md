@@ -6,7 +6,7 @@ matematičke  tehnike  i  algoritmi.  U  svojoj  srži,  to  uključuje  transfo
 šifrirani  tekst.  Ova  se  transformacija  postiže  primjenom  kriptografskih
 algoritmi,  u  biti  skupovi  pravila  i  procedura.
 
-''' bash
+''' 
 Pokretanje koda simetricna_kriptografija.py
 Ispis rezultat koda:
 
@@ -26,7 +26,7 @@ RSA koristi par ključeva:
 - Javni ključ (koristi se za šifriranje)
 - Privatni ključ (koristi se za dešifriranje)
 
-''' bash
+''' 
 Generiranje ključeva:
 Pokretanje koda RSA.py
 Ispis rezultata koda:
@@ -67,7 +67,7 @@ Prednosti i mane
 ❌ Sporije od simetrične kriptografije (npr. AES), jer koristi složene matematičke operacije
 ❌ Ako privatni ključ bude ukraden, sigurnost sistema je ugrožena
 
-''' bash
+''' 
 Pokretanje koda asimetricna_kriptografija.py
 Ispis rezultata koda:
 
@@ -89,7 +89,7 @@ Prednosti ECC u odnosu na RSA
 🔹 Matematički složeniji od RSA.
 🔹 Teža implementacija i verifikacija, što može dovesti do sigurnosnih grešaka.
 
-''' bash
+''' 
 Pokretanje koda elipticna_krivulja.py
 Ispis rezultata koda:
 
@@ -140,7 +140,7 @@ Koristi se u osjetljivim industrijama poput bankarstva, zdravstva i financijskih
 Zaključak
 Digitalni potpisi su ključni alat za sigurnost u digitalnom svijetu. Pružaju autentičnost, integritet i neporecivost, čime omogućuju sigurno poslovanje, komunikaciju i upravljanje podacima u digitalnom okruženju.
 
-''' bash
+''' 
 Pokretanje koda kreirati_i_provjeriti_potpise.py
 Ispis rezultata koda:
 
@@ -159,7 +159,7 @@ Originalni tekst: HELLO
 Pomak za 3 mjesta: KHOOR
 H → K, E → H, L → O, L → O, O → R
 
-''' bash
+''' 
 Pokretanje koda cezarova_sifra.py
 Ispis rezultata koda:
 
@@ -170,7 +170,7 @@ Ispis rezultata koda:
 
 # Razbiti cezarovu šifru
 
-''' bash 
+'''  
 Pokretanje koda cezarova_sifra_razbiti.py
 Šifru dobijete "[?] Navedite duljinu smjene (0-25): 7" (koji broj odaberete 0-25)
 Ispis rezultata koda:
@@ -222,7 +222,7 @@ Poboljšana verzija Cezarove šifre – pruža veću sigurnost od jednostavne za
 Povijesne enkripcije – prije pojave modernih šifriranih sustava koristila se za kodiranje poruka u vojne i privatne svrhe.
 Osnovne enkripcije u aplikacijama – može se koristiti u jednostavnim programima i igrama gdje nije potrebna visoka sigurnost.
 
-''' bash
+''' 
 Pokrenite kod afina_sifra.py
 Ispis rezultata koda:
 
@@ -234,7 +234,7 @@ Ispis rezultata koda:
 # Razbijanje afine šifre
 Afina šifra, iako jača od Cezarove šifre, još uvijek je lako probijena jer je riječ o monoalfabetskoj substitucijskoj šifri. To znači da svako slovo u originalnom tekstu uvijek postaje isto slovo u šifriranom tekstu, što omogućava napade poput analize učestalosti i brutalne sile.
 
-''' bash
+''' 
 Pokrenite kod afina_sifra_dekriptirati.py
 U afinoj šifri se koristi za ključ a = 3, b = 10
 Ispis rezultata koda:
@@ -258,7 +258,7 @@ Zaštita od uređivanja ("Owner Password") – PDF se može otvoriti, ali nije d
 Šifriranje PDF-a – PDF se enkriptira kako bi se osigurala potpuna zaštita sadržaja.
 Digitalni potpisi – Osiguravaju autentičnost i integritet dokumenta.
 
-''' bash
+''' 
 Umetnite pdf datoteku u direktori gdje vam je pisan kod.
 Pokrenite kod zakljucati_pdf.py
 Ispis rezultata koda:
@@ -274,7 +274,7 @@ Kada pokušavate pokrenuti pdf datoteku pomoču preglednika morate upisati lozin
 # Razbiti PDF
 Morate napraviti datoteku password.txt i napitati neke  lozinke koje če se koristiti u kriptografiji
 
-''' bash
+''' 
 Pokretanje koda: python razbiti_pdf.py Recept.pdf password.txt
 Ispis rezultata koda:
 
@@ -286,7 +286,7 @@ Pogađanje lozinke:  98%|██████████████████�
 # Stvaranje Zip datoteke i zaključavanje zip datoteke
 ZIP datoteke su popularne za kompresiju i arhiviranje više datoteka u jedinstveni paket. Također, možete dodati lozinku za šifriranje i zaštitu tih datoteka. Python nudi različite biblioteke za rad s ZIP datotekama.
 
-''' bash 
+''' 
 Pokretanje koda: python zakljucati_zip_datoteku.py --zipfile new_test.zip --addfile kriptografija.txt
 Ispis rezultata koda:
 
@@ -299,14 +299,14 @@ kreirali smo datoteku new_test.zip
 
 # Dodavanje lozinke u zip (-protected)
 
-''' bash
+''' 
 Pokretanje koda: python dodati_lozinku_u_zip.py Nova.zip
 unesete lozinku i mapa je kreirana
 '''
 
 # Razbijannje zip lozinke
 
-''' bash
+''' 
 Pokrenuti kod: python razbiti_zip.py new_test.zip password.txt
 Ispis rješenje koda:
 
@@ -318,7 +318,7 @@ Ukupan broj lozinki za testiranje: 52
 
 # Upravitelj lozinki
 
-''' bash
+''' 
  Pokretanje koda: python upravitelj_lozinki.py
 Kada se prijavite dobite (user_data.json)
 Ispis rješenje koda:
@@ -355,7 +355,7 @@ Izlaz iz programa...
 
 # Program za šifriranje datoteka
 
-''' bash
+''' 
 Pokretanje koda:
 Ispis rješenja koda:
 
@@ -380,7 +380,7 @@ Ovo je jednostavna, ali močna skripta koju možemo koristiti za provjeru naših
 Sada,  testirajmo  naš  kod.  Za  ovu  demonstraciju  koristit  ću  VLC media  player.  Koristim  ovo  jer  je  VLC  prilično  popularan  media  player.
 Kada odete na stranicu za preuzimanje VLC i preuzmete, odmah ispod Downloading VLC možete vidjeti SHA-256, kopirajte ga i pokrenite skriptu i nakon riječi --hash zaljepite SHA-255 i stisnete enter.
 
-''' bash
+''' 
 Pokrenuti kod: python validator_datoteka.py -f C:\Users\Krunoslav\Downloads\vlc-3.0.21-win32.exe --hash  4bd03202b6633f9611b3fc8757880a9b2b38c7c0c40ed6bcbefec71c0099d493
 Ispis:
 
